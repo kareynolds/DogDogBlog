@@ -1,0 +1,46 @@
+<% include ./partials/indexHeader %>
+
+
+        
+        <div class="pusher">
+            <div class="ui inverted vertical masthead center aligned segment">
+                <div class="ui container">
+                    <div class="ui large secondary inverted pointing menu">
+
+                        <a class="active item" id="colorMe" href="/blogs"> Home </a>
+                        <a class="item" id="colorMe" href="/blogs/new">New Dog Submission</a>
+                    </div>
+                    <div clas="ui text container">
+                        <h1 class="ui inverted header"> Dog Dog Blog</h1>
+                        <h2>Learn more about various types of Man's best friend </h2>
+                        <a href="/blogs/new"><div class="ui large primary button">Or submit a new one!<i class="right arrow icon"></i></div></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+<div class="ui stackable two column grid">
+
+<% blogs.forEach(function(blog){ %>
+    <div class="column ui main text container segment">
+        <h1> <%= blog.title %></h1>
+        
+        <div>
+            <image class="ui centered large image" src="<%=blog.image%>"></image>
+        </div>
+        <div class="ui divider"></div>
+            <p><%=blog.body.substring(0, 100)%>...</p>
+        
+        <div class="meta">
+            <span><%= blog.created.toDateString() %></span>
+        </div>
+        <div class="extra">
+           <a  class="ui basic button green" href="/blogs/<%=blog._id%>"> Read More </a>
+        </div>
+    </div>
+
+<% }) %>
+</div>
+<% include ./partials/footer %>
+
