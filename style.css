@@ -1,0 +1,73 @@
+.icon {
+    font-size: 2.0em;
+}
+
+
+
+
+.ui.inverted.vertical.masthead.center.aligned.segment {
+    height: 600px;
+    background-image: url(http://az616578.vo.msecnd.net/files/2016/12/14/6361734710220168731233681759_man%27s+best+friend+best+medicine.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+.ui.inverted.header {
+    padding-top: 100px;
+    padding-bottom: 30px;
+    font-size: 5em;
+}
+
+
+
+h2 {
+    padding-bottom: 30px;
+}
+
+.ui.inverted.menu.active.item{
+    color: black;
+}
+
+a.item {
+    color: black!important;
+}
+
+#colorMe{
+    color: black!important;
+    font-weight: 800;
+    font-size: 20px;
+}
+
+.ui.segment:first-child {
+    margin-top: 14px!important;
+}
+
+.ui.secondary.inverted.pointing.menu {
+    border: none;
+}
+
+#whiteLink {
+    color: white!important;
+}
+
+#dogBlogLogo {
+    font-size: 25px;
+    font-weight: bold;
+    position: relative;
+    left: 50;
+}
+
+.ui.stacked.segment.blue {
+    padding-top: 100px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+#showPageMargin {
+    margin-top: 100px;
+}
+
+#deleteButton {
+    margin-top: 20px;
+}
