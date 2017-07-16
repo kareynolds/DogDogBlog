@@ -1,0 +1,45 @@
+<% include ./partials/header %>
+
+<div class="ui main text container segment" id="showPageMargin">
+    
+    <div class="ui top attached">
+        
+        <div class="item">
+            <h1 class="huge header"> <%= blog.title %></h1>
+            <image class="ui centered image" src="<%=blog.image%>">
+        </div>
+        
+    </div>
+    
+    <div class="description">
+        <p> <%= blog.body %></p>
+    </div>
+    
+    <div class="extra">
+        <a href="/blogs/<%=blog._id%>/edit"> Update Post</a>
+        <div class="right"
+        <form action="/blogs/<%=blog._id%>?_method=DELETE" method="POST">
+            <button id="deleteButton" class="ui basic big button red"> DELETE </button>
+        </form>
+        </div>
+    </div>
+    
+    
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<% include ./partials/footer %>
